@@ -1,7 +1,9 @@
 # alpine-duplicity-azure
 Docker image for **[Duplicity](http://duplicity.nongnu.org/)** with **[Azure](https://azure.microsoft.com/)** support
 
-This image extends **[wernight/docker-duplicity](https://hub.docker.com/r/wernight/duplicity/)** and adds the Microsoft Azure Python client. 
+This image extends **[wernight/docker-duplicity](https://hub.docker.com/r/wernight/duplicity/)** and adds the Microsoft Azure Python client. With this, we can directly refer to an Azure container in the Duplicity command through `azure://my-container-name`. Two environment variables should be added also for authentication:
+  * AZURE_ACCOUNT_NAME
+  * AZURE_ACCOUNT_KEY
 
 ## Usage
 
